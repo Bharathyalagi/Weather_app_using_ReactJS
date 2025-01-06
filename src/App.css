@@ -1,0 +1,75 @@
+html, body, #root {
+  font-family: chillar;
+  background: #87CEEB;
+  color: #4809b4;
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #77a928, #6b59aa);
+}
+
+.search {
+  padding: 15px;
+  width: 80%;
+  max-width: 500px;
+  margin-bottom: 20px;
+  border: 2px solid #0c0c01;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(1, 1, 1, 0.2);
+}
+
+.city {
+  padding: 30px;
+  border-radius: 15px;
+  background: #fdfdfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.city-name {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.city-temp {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #c69a62;
+}
+
+.info img {
+  width: 100px;
+  height: 100px;
+}
+
+.info p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.loader {
+  border: 4px solid transparent;
+  border-top: 4px solid blue;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
